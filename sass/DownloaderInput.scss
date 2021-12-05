@@ -1,0 +1,27 @@
+.DownloaderInput{
+    input{
+        border: none;
+        margin: 0 20px;
+        font-size: 18px;
+        border-radius: 3px;
+        padding: 10px;
+        height: 30px;
+        width: 400px;
+        background-color: $color-second;
+        color: white;
+
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            color: rgba(255, 255, 255, 0.4);
+        }
+    }
+
+    .button{
+        height: 50px;
+        width: 100px;
+        background-color: $color-main;
+        color: white;
+    }
+}

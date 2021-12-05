@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'YoutubeFont';
+    src: url('../public/youtube-sans-medium.ttf');
+  }
+
+// IMPORTS //
+@import "Colors";
+@import "Home";
+@import "DownloaderInput";
+
+*{
+    font-family: 'YoutubeFont';
+}
+
+body{
+    margin: 0;
+}

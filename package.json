@@ -8,9 +8,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "events": "^3.3.0",
+    "js-file-download": "^0.4.12",
     "next": "12.0.4",
+    "node-sass": "^6.0.1",
+    "progress-stream": "^2.0.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "^17.0.2",
+    "react-spring": "^9.3.2",
+    "ytdl-core": "^4.9.1"
   },
   "devDependencies": {
     "@types/node": "16.11.11",
