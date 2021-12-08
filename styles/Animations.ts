@@ -16,4 +16,11 @@ var DownloaderInputAnim: {} = {
     config: { mass: 3, tension: 250 }
 }
 
-export { TitleHome, DownloaderButtonAnim, DownloaderInputAnim };
+var LoadingCircle: {} = {
+    from: { rotateZ: 0 },
+    to: { rotateZ: 360 },
+    config: { mass: 3, tension: 170 },
+    loop: true
+}
+
+export { TitleHome, DownloaderButtonAnim, DownloaderInputAnim, LoadingCircle };
