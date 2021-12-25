@@ -1,11 +1,12 @@
-import React, {useState} from 'react'
+import React, {Component, useState} from 'react'
 import Image from 'next/image'
 import FileDownloader from 'js-file-download'
 import Axios from 'axios'
 import {ProgressBar} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {NextPage} from 'next'
 
-export default function android() {
+const Android : NextPage = () => {
 	const [now,setNow] = useState(0);
 	const [showProgressBar, setShowProgressBar] = useState(false);
 	const DownloadFunction = async () => {
@@ -40,3 +41,5 @@ export default function android() {
         </div>
     )
 }
+
+export default Android;
