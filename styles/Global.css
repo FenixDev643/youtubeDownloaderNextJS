@@ -21,6 +21,7 @@
     .home .title h1 {
       color: #282828;
       font-size: 40px;
+      font-weight: normal;
       margin: 0 auto;
       text-align: center; }
   .home svg.waveUp {
@@ -70,8 +71,21 @@ div.loading-div {
     border-radius: 50%;
     background-color: #555454; }
 
+.home-android {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .home-android h1 {
+    font-weight: normal;
+    color: #282828; }
+  .home-android p {
+    color: #282828;
+    text-align: center; }
+
 * {
   font-family: 'YoutubeFont'; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #555454; }

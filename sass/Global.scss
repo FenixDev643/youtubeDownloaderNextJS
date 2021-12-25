@@ -8,6 +8,7 @@
 @import "Home";
 @import "DownloaderInput";
 @import "Loading";
+@import "Android";
 
 *{
     font-family: 'YoutubeFont';
@@ -15,4 +16,5 @@
 
 body{
     margin: 0;
+    background-color: $color-bg;
 }
