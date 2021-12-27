@@ -7,21 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {NextPage} from 'next'
 
 const Android : NextPage = () => {
-	const [now,setNow] = useState(0);
-	const [showProgressBar, setShowProgressBar] = useState(false);
 	const DownloadFunction = async () => {
-		let url = 'https://download943.mediafire.com/uk5hy568lbdg/dfzntn49w60eg6s/YTDownloaderByFenixDEV.apk';
-		setShowProgressBar(true);
-		await Axios.get(url, {
-		  onDownloadProgress: progressEvent => {
-                       var total = progressEvent.total;
-		       var loaded = progressEvent.loaded;
-                       setNow(Math.floor(loaded / total * 100));
-                  }
-                }).then(res => {
-			FileDownloader(res.data, 'YouTubeDownloaderFenixDEV');
-			setShowProgressBar(false);
-		});    
+                let url = 'http://www.mediafire.com/file/dfzntn49w60eg6s/YTDownloaderByFenixDEV.apk/file';
+                window.open(url);
 	}
 
     return (
@@ -35,8 +23,6 @@ const Android : NextPage = () => {
 			<p>descargar</p>
 			<Image src="/ic_launcher.png" width="100px" height="100px"
 			onClick={DownloadFunction}/>
-		{showProgressBar ? <ProgressBar style={{width: '100%', height: '25px', marginTop: '30px'}} striped variant="danger" animated now={now} label={`${now}%`}/>
-  : null}
 	      </div>
         </div>
     )
